@@ -12,17 +12,17 @@ interface Props {
 }
 
 export const Render: React.FC<Props> = ({ children }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   // redirect to spaceai.jp
-  useEffect(() => {
-    if (
-      !window.location.hostname.match("/spaceai.jp/") &&
-      process.env.NEXT_PUBLIC_APP_ENV === "prod"
-    ) {
-      router.push(process.env.NEXT_PUBLIC_APP_URL + router.asPath);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     !window.location.hostname.match("/spaceai.jp/") &&
+  //     process.env.NEXT_PUBLIC_APP_ENV === "prod"
+  //   ) {
+  //     router.push(process.env.NEXT_PUBLIC_APP_URL + router.asPath);
+  //   }
+  // }, []);
 
   // const matchedRoute = Routes.filter((route) => {
   //   return router.route == route.path;
