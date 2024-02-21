@@ -1,0 +1,66 @@
+{
+  "name": "SpaceAIIncrporate",
+  "version": "1.3.1",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@mui/styles": "^5.10.14",
+    "animate.css": "4.1.1",
+    "classnames": "2.3.1",
+    "dotenv": "^16.0.3",
+    "emailjs-com": "^3.2.0",
+    "moment": "2.29.4",
+    "next": "12.2.5",
+    "nouislider": "15.1.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-animate-on-scroll": "2.1.5",
+    "react-datetime": "3.1.1",
+    "react-dom": "^18.2.0",
+    "react-image-gallery": "1.2.9",
+    "react-markdown": "^9.0.1",
+    "react-slick": "0.29.0",
+    "react-tagsinput": "3.19.0",
+    "sass": "1.54.4",
+    "styled-components": "^6.0.8",
+    "typescript": "^5.2.2",
+    "webpack": "5.74.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export NEXT_PUBLIC_APP_ENV=local && next",
+    "build:local": "yarn format && export NEXT_PUBLIC_APP_ENV=local && next build",
+    "build:dev": "export NEXT_PUBLIC_APP_ENV=dev && next build && next export",
+    "build:prod": "export NEXT_PUBLIC_APP_ENV=prod && next build && next export",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint",
+    "lint:es": "eslint --ext .ts,.js,.tsx . && prettier --check \"./**/*.{ts,js,tsx}\"",
+    "lint:fix": "eslint --ext .ts,.js,.tsx . --fix && prettier --write \"./**/*.{ts,js,tsx,scss}\"",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css}'",
+    "install:clean": "rm -rf node_modules/ && rm -rf yarn.lock && rm -rf .next/ && yarn",
+    "compile-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.css",
+    "minify-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.min.css --style compressed"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": []
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.54.1",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.0.3"
+  }
+}
