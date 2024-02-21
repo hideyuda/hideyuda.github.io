@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from "react";
+import React, { useEffect } from "react";
 import makeStyles from "@mui/styles/makeStyles";
 // core components
 import GridContainer from "../../components/Grid/GridContainer";
@@ -13,8 +13,16 @@ import Link from "next/link";
 
 const useStyles = makeStyles(projectsStyle as Parameters<typeof makeStyles>[0]);
 
+import ReactMarkdown from "react-markdown";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { IconButton } from "@mui/material";
+import { useRouter } from "next/router";
+
 export default function SectionProducts({ ...rest }) {
   const classes = useStyles();
+
+  const router = useRouter();
+
   return (
     <div className="cd-section" {...rest}>
       <div className={classes.projects}>
@@ -28,14 +36,14 @@ export default function SectionProducts({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>Our Products</h2>
+              <h2 className={classes.title}>個人開発 / Products</h2>
               <div className={classes.sectionSpace} />
             </GridItem>
           </GridContainer>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
-              <Link href="/tubeai" target="_blank" rel="noopener noreferrer">
-                <Card plain className={classes.card2}>
+              <Card plain className={classes.card2}>
+                <Link href="/tubeai" target="_blank" rel="noopener noreferrer">
                   <CardHeader image plain>
                     <img src="/img/tubeai/logo.png" alt="tubeai logo" />
                     <div
@@ -47,14 +55,24 @@ export default function SectionProducts({ ...rest }) {
                       }}
                     />
                   </CardHeader>
-                  <CardBody plain>
-                    <h4 className={classes.cardTitle}>Chat Tune</h4>
-                    <h4 className={classes.description}>
-                      コンテンツの種類を選択するだけで、自動でキーワード選定から動画を生成するサービスです。
-                    </h4>
-                  </CardBody>
-                </Card>
-              </Link>
+                </Link>
+                <CardBody plain>
+                  <h4 className={classes.cardTitle}>Tube AI</h4>
+                  <h4 className={classes.description}>
+                    コンテンツの種類を選択するだけで、自動でキーワード選定から動画を生成するサービスです。
+                  </h4>
+                  <a
+                    href="https://spaceai.jp/hideyuda/tubeai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IconButton sx={{ color: "secondary" }}>
+                      <KeyboardDoubleArrowRightIcon sx={{ fontSize: "1rem" }} />
+                      <span style={{ fontSize: "0.8rem" }}>技術詳細を見る</span>
+                    </IconButton>
+                  </a>
+                </CardBody>
+              </Card>
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Link href="/chattune" target="_blank" rel="noopener noreferrer">
@@ -75,6 +93,20 @@ export default function SectionProducts({ ...rest }) {
                     <h4 className={classes.description}>
                       会話履歴から自動でリプライをサジェストするサービスです。ブラウザ拡張(Chrome)として提供しています。
                     </h4>
+                    <a
+                      href="https://spaceai.jp/hideyuda/tubeai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IconButton sx={{ color: "secondary" }}>
+                        <KeyboardDoubleArrowRightIcon
+                          sx={{ fontSize: "1rem" }}
+                        />
+                        <span style={{ fontSize: "0.8rem" }}>
+                          技術詳細を見る
+                        </span>
+                      </IconButton>
+                    </a>
                   </CardBody>
                 </Card>
               </Link>
@@ -156,6 +188,20 @@ export default function SectionProducts({ ...rest }) {
                         ></path>
                       </svg>
                       Add to Slack
+                    </a>
+                    <a
+                      href="https://spaceai.jp/hideyuda/tubeai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IconButton sx={{ color: "secondary" }}>
+                        <KeyboardDoubleArrowRightIcon
+                          sx={{ fontSize: "1rem" }}
+                        />
+                        <span style={{ fontSize: "0.8rem" }}>
+                          技術詳細を見る
+                        </span>
+                      </IconButton>
                     </a>
                   </CardBody>
                 </Card>

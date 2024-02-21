@@ -14,10 +14,11 @@ import indexStyle from "../styles/jss/nextjs-material-kit-pro/pages/indexStyle";
 import Link from "next/link";
 
 // // Sections for this page
-import SectionProducts from "../templates/hideyuda/SectionProducts";
-import SectionContributions from "../templates/hideyuda/SectionContributions";
+import SectionProducts from "../templates/index/SectionProducts";
+import SectionContributions from "../templates/index/SectionContributions";
 import { List } from "@mui/material";
 import Button from "../components/CustomButtons/Button";
+import SectionZenn from "../templates/index/SectionZenn";
 
 const useStyles = makeStyles(indexStyle as Parameters<typeof makeStyles>[0]);
 
@@ -79,7 +80,7 @@ export default function Index({ ...rest }) {
                 >
                   <i className="fab fa-facebook" />
                 </Button>
-                <Button
+                {/* <Button
                   justIcon
                   simple
                   target="_blank"
@@ -96,7 +97,7 @@ export default function Index({ ...rest }) {
                   href="https://note.com/hideyuda"
                 >
                   <img src="/img/note.svg" alt="note" />
-                </Button>
+                </Button> */}
                 <Button
                   justIcon
                   simple
@@ -107,34 +108,59 @@ export default function Index({ ...rest }) {
                   <img src="/img/zenn.svg" alt="zenn" />
                 </Button>
               </List>
-              {/* <br />
-              <Link href="/hideyuda/#contributions">
-                <a
-                  style={{
-                    alignItems: "center",
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    border: "1px solid #ddd",
-                    borderRadius: "4px",
-                    display: "inline-flex",
-                    fontFamily: "Lato, sans-serif",
-                    fontSize: "16px",
-                    fontWeight: "600",
-                    height: "56px",
-                    justifyContent: "center",
-                    textDecoration: "none",
-                    width: "296px",
-                  }}
-                >
-                  詳細を見る
-                </a>
-              </Link> */}
+              <br />
+              <div style={{ display: "flex" }}>
+                <Link href="/#zenn">
+                  <a
+                    style={{
+                      alignItems: "center",
+                      color: "#000",
+                      backgroundColor: "#fff",
+                      border: "1px solid #ddd",
+                      borderRadius: "4px",
+                      display: "inline-flex",
+                      fontFamily: "Lato, sans-serif",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      height: "56px",
+                      justifyContent: "center",
+                      textDecoration: "none",
+                      width: "296px",
+                      marginRight: "16px",
+                    }}
+                  >
+                    技術ブログ
+                  </a>
+                </Link>
+                <Link href="/#contributions">
+                  <a
+                    style={{
+                      alignItems: "center",
+                      color: "#000",
+                      backgroundColor: "#fff",
+                      border: "1px solid #ddd",
+                      borderRadius: "4px",
+                      display: "inline-flex",
+                      fontFamily: "Lato, sans-serif",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      height: "56px",
+                      justifyContent: "center",
+                      textDecoration: "none",
+                      width: "296px",
+                    }}
+                  >
+                    インターンシップでの開発経験
+                  </a>
+                </Link>
+              </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classes.container}>
         {/* <SectionProducts id="products" /> */}
+        <SectionZenn id="zenn" />
         <SectionContributions id="contributions" />
       </div>
       {/* <Footer content={<FooterLinks />} /> */}
