@@ -19,6 +19,8 @@ import SectionContributions from "../templates/index/SectionContributions";
 import { List } from "@mui/material";
 import Button from "../components/CustomButtons/Button";
 import SectionZenn from "../templates/index/SectionZenn";
+import MDAvatar from "../components/MDAvatar";
+import SectionOpensource from "../templates/index/SectionOpensource";
 
 const useStyles = makeStyles(indexStyle as Parameters<typeof makeStyles>[0]);
 
@@ -42,6 +44,17 @@ export default function Index({ ...rest }) {
                 <br />
                 サッカーとプログラミングが好きです。
               </h4>
+              {/* <Grid container spacing={3} alignItems="center">
+          <Grid item> */}
+              {/* <MDAvatar
+              // src={burceMars.src}
+              src={queryUser?.photoUrl}
+              alt="profile-image"
+              size="xl"
+              shadow="sm"
+            /> */}
+              {/* </Grid>
+          <Grid item></Grid> */}
               <List className={classes.list}>
                 <Button
                   color="github"
@@ -165,6 +178,7 @@ export default function Index({ ...rest }) {
         {/* <SectionProducts id="products" /> */}
         <SectionZenn id="zenn" />
         <SectionContributions id="contributions" />
+        <SectionOpensource />
       </div>
       {/* <Footer content={<FooterLinks />} /> */}
     </div>

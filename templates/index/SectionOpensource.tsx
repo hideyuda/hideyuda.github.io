@@ -24,7 +24,7 @@ export default function SectionCommitingProducts({ ...rest }) {
   const [reachMarkdown, setReachMarkdown] = useState("");
 
   useEffect(() => {
-    fetch(`/markdown/reach.md`)
+    fetch(`/markdown/opensource.md`)
       .then((m) => {
         return m.text();
       })
@@ -46,7 +46,7 @@ export default function SectionCommitingProducts({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>インターンシップでの経験</h2>
+              <h2 className={classes.title}>オープンソースでの経験</h2>
               <div className={classes.sectionSpace} />
             </GridItem>
           </GridContainer>
@@ -77,24 +77,24 @@ export default function SectionCommitingProducts({ ...rest }) {
               {expanded ? (
                 <>
                   <ReactMarkdown>{reachMarkdown}</ReactMarkdown>
-                  <IconButton
+                  {/* <IconButton
                     sx={{ color: "secondary" }}
                     onClick={() => setExpanded(false)}
                   >
                     <KeyboardDoubleArrowUpIcon sx={{ fontSize: "1rem" }} />
                     <span style={{ fontSize: "0.8rem" }}>閉じる</span>
-                  </IconButton>
+                  </IconButton> */}
                 </>
               ) : (
                 <>
                   <ReactMarkdown>{reachMarkdown.slice(0, 500)}</ReactMarkdown>
-                  <IconButton
+                  {/* <IconButton
                     sx={{ color: "secondary" }}
                     onClick={() => setExpanded(true)}
                   >
                     <KeyboardDoubleArrowDownIcon sx={{ fontSize: "1rem" }} />
                     <span style={{ fontSize: "0.8rem" }}>もっと見る</span>
-                  </IconButton>
+                  </IconButton> */}
                 </>
               )}
             </div>
