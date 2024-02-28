@@ -18,18 +18,37 @@ import Avatar from "@mui/material/Avatar";
 import { styled, Theme } from "@mui/material/styles";
 
 export default styled(Avatar)(({ theme, ownerState }: { theme?: Theme | any; ownerState: any }) => {
-  const { palette, functions, typography, boxShadows } = theme;
+  const { palette, typography } = theme;
   const { shadow, bgColor, size } = ownerState;
 
   const { gradients, transparent, white } = palette;
-  const { pxToRem, linearGradient } = functions;
-  const { size: fontSize, fontWeightRegular } = typography;
+  // const { pxToRem, linearGradient } = functions;
+  const { size: fontWeightRegular } = typography;
+
+  const pxToRem = (value: number) => `${value / 16}rem`;
+
+  const boxShadows = {
+    none: "none",
+    xs: "0 2px 5px 0 rgba(0, 0, 0, 0.26)",
+    sm: "0 2px 4px 0 rgba(0, 0, 0, 0.14)",
+    md: "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
+    lg: "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
+    xl: "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
+    xxl: "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
+    inset: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+  };
+
+  const fontSize = {
+    xs: pxToRem(12),
+    sm: pxToRem(14),
+    md: pxToRem(16),
+  };
 
   // backgroundImage value
-  const backgroundValue =
-    bgColor === "transparent"
-      ? transparent.main
-      : linearGradient(gradients[bgColor].main, gradients[bgColor].state);
+  const backgroundValue = white
+    // bgColor === "transparent"
+    //   ? transparent.main
+    //   : linearGradient(gradients[bgColor].main, gradients[bgColor].state);
 
   // size value
   let sizeValue;
@@ -81,7 +100,7 @@ export default styled(Avatar)(({ theme, ownerState }: { theme?: Theme | any; own
 
   return {
     background: backgroundValue,
-    color: white.main,
+    color: white,
     fontWeight: fontWeightRegular,
     boxShadow: boxShadows[shadow],
     ...sizeValue,

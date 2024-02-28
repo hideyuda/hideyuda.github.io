@@ -16,7 +16,7 @@ import Link from "next/link";
 // // Sections for this page
 import SectionProducts from "../templates/index/SectionProducts";
 import SectionContributions from "../templates/index/SectionContributions";
-import { List } from "@mui/material";
+import { Grid, List } from "@mui/material";
 import Button from "../components/CustomButtons/Button";
 import SectionZenn from "../templates/index/SectionZenn";
 import MDAvatar from "../components/MDAvatar";
@@ -36,6 +36,27 @@ export default function Index({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
+              <Grid
+                container
+                spacing={3}
+                display={"flex"}
+                alignItems={"center"}
+                marginLeft={"10px"}
+              >
+                <MDAvatar
+                  src={"/img/profile.jpg"}
+                  alt="profile-image"
+                  size="xl"
+                  shadow="sm"
+                  style={{ marginRight: "16px" }}
+                />
+                <MDAvatar
+                  src={"/img/football.jpg"}
+                  alt="profile-image"
+                  size="xl"
+                  shadow="sm"
+                />
+              </Grid>
               <h2 className={classes.title}>Hidenari Yuda / 湯田英也</h2>
               <h4>
                 大阪府出身。同志社大学在学中。
@@ -44,17 +65,6 @@ export default function Index({ ...rest }) {
                 <br />
                 サッカーとプログラミングが好きです。
               </h4>
-              {/* <Grid container spacing={3} alignItems="center">
-          <Grid item> */}
-              {/* <MDAvatar
-              // src={burceMars.src}
-              src={queryUser?.photoUrl}
-              alt="profile-image"
-              size="xl"
-              shadow="sm"
-            /> */}
-              {/* </Grid>
-          <Grid item></Grid> */}
               <List className={classes.list}>
                 <Button
                   color="github"
