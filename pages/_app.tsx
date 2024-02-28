@@ -111,7 +111,7 @@ export default class MyApp extends App {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {/* <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" /> */}
-          <title>Space AI</title>
+          <title>Hidenari Yuda</title>
         </Head>
         <ThemeProvider theme={theme}>
           <StyledEngineProvider injectFirst>

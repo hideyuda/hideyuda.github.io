@@ -1,20 +1,20 @@
-# [Space AI Corporate](https://spaceai.jp)
+# [Hidenari Yuda Corporate](https://hidenari-yuda.jp)
 
- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit-pro%2Fpresentation&text=NextJS%20Material%20Kit%20PRO&via=Creative%20Tim&hashtags=nextjs%20%23SpaceAIInc%20%23material-ui%20%23react%20%23reactjs%20%23materialdesign)
+ [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit-pro%2Fpresentation&text=NextJS%20Material%20Kit%20PRO&via=Creative%20Tim&hashtags=nextjs%20%23hidenari-yudaInc%20%23material-ui%20%23react%20%23reactjs%20%23materialdesign)
 
-**Space AI Corporate** is a corporate site made for TypeScript, NextJS, React and Material-UI.
+**Hidenari Yuda Corporate** is a corporate site made for TypeScript, NextJS, React and Material-UI.
 
 **Getting Started**
 
-- Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/?ref=SpaceAIInc)
+- Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/?ref=hidenari-yudaInc)
 - Open Terminal
 - Go to your file project (where you've unzipped the product)
 - Run in terminal `yarn`
 - Then run `yarn dev`
 - Navigate to [http://localhost:3000](http://localhost:3000)
-- More information → [React](https://reactjs.org/docs/installation.html?ref=SpaceAIInc)
-- More information → [NextJS](https://nextjs.org?ref=SpaceAIInc)
-- More information → [Material-UI](https://material-ui.com/?ref=SpaceAIInc)
+- More information → [React](https://reactjs.org/docs/installation.html?ref=hidenari-yudaInc)
+- More information → [NextJS](https://nextjs.org?ref=hidenari-yudaInc)
+- More information → [Material-UI](https://material-ui.com/?ref=hidenari-yudaInc)
 - More information → [Material Kit PRO React](https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-readme)
 
 
@@ -49,7 +49,7 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://spaceai.jp/contact) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](https://hidenari-yuda.jp/contact) instead of opening an issue.
 
 ## Licensing
 
@@ -59,7 +59,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Social Media
 
-GitHub: <https://github.com/SpaceAIInc>
+GitHub: <https://github.com/hidenari-yudaInc>
 
 GitHub(Owner): <https://twitter.com/hidenari-yuda>
 

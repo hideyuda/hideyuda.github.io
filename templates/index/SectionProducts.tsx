@@ -62,7 +62,7 @@ export default function SectionProducts({ ...rest }) {
                     コンテンツの種類を選択するだけで、自動でキーワード選定から動画を生成するサービスです。
                   </h4>
                   <a
-                    href="https://spaceai.jp/hideyuda/tubeai"
+                    href="https://hidenari-yuda.jp/hideyuda/tubeai"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -94,7 +94,7 @@ export default function SectionProducts({ ...rest }) {
                       会話履歴から自動でリプライをサジェストするサービスです。ブラウザ拡張(Chrome)として提供しています。
                     </h4>
                     <a
-                      href="https://spaceai.jp/hideyuda/tubeai"
+                      href="https://hidenari-yuda.jp/hideyuda/tubeai"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -190,7 +190,7 @@ export default function SectionProducts({ ...rest }) {
                       Add to Slack
                     </a>
                     <a
-                      href="https://spaceai.jp/hideyuda/tubeai"
+                      href="https://hidenari-yuda.jp/hideyuda/tubeai"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

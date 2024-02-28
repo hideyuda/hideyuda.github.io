@@ -100,7 +100,7 @@ export default function FooterLinks(props: any) {
             justIcon
             simple
             target="_blank"
-            href="https://github.com/SpaceAIInc"
+            href="https://github.com/hidenari-yudaInc"
           >
             <i className="fab fa-github" />
           </Button>
@@ -112,14 +112,14 @@ export default function FooterLinks(props: any) {
           >
             <img src="/img/note.svg" alt="note" />
           </Button>
-          {/* <Button justIcon simple href="https://x.com/SpaceAIjp">
+          {/* <Button justIcon simple href="https://x.com/hidenari-yudajp">
             <img src="/img/x.svg" alt="x" />
           </Button> */}
           {/* <Button
             justIcon
             simple
             target="_blank"
-            href="https://zenn.dev/spaceai"
+            href="https://zenn.dev/hidenari-yuda"
           >
             <img src="/img/zenn.svg" alt="zenn" />
           </Button> */}
@@ -127,7 +127,7 @@ export default function FooterLinks(props: any) {
             color="instagram"
             justIcon
             simple
-            href="https://instagram.com/spaceai.jp"
+            href="https://instagram.com/hidenari-yuda.jp"
           >
             <i className="fab fa-instagram" />
           </Button> */}
@@ -135,7 +135,7 @@ export default function FooterLinks(props: any) {
             color="linkedin"
             justIcon
             simple
-            href="https://linkedin.com/company/spaceai_jp"
+            href="https://linkedin.com/company/hidenari-yuda_jp"
           >
             <i className="fab fa-linkedin" />
           </Button> */}
@@ -143,7 +143,7 @@ export default function FooterLinks(props: any) {
             color="facebook"
             justIcon
             simple
-            href="https://facebook.com/spaceai"
+            href="https://facebook.com/hidenari-yuda"
           >
             <i className="fab fa-facebook" />
           </Button> */}
@@ -158,7 +158,7 @@ export default function FooterLinks(props: any) {
         </List>
       </div>
       <div className={classes.right}>
-        &copy; {new Date().getFullYear()} , All rights reserved by Space AI
+        &copy; {new Date().getFullYear()} , All rights reserved by Hidenari Yuda
       </div>
     </div>
   );

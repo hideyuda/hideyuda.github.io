@@ -37,7 +37,10 @@ export default function Index({ ...rest }) {
               <h2 className={classes.title}>Hidenari Yuda / 湯田英也</h2>
               <h4>
                 大阪府出身。同志社大学在学中。
-                2022年2月から3年ほど京都のスタートアップでエンジニアとしてインターンしております。
+                <br />
+                2022年2月から2024年2月現在までアンドイーズ株式会社でエンジニアとしてインターンをしております。
+                <br />
+                サッカーとプログラミングが好きです。
               </h4>
               <List className={classes.list}>
                 <Button

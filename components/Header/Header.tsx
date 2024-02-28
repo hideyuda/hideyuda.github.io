@@ -83,7 +83,7 @@ export default function Header(props: {
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
           <Link href="/">
-            <a>Space AI</a>
+            <a>Hidenari Yuda</a>
           </Link>
         </Button>
         <Hidden mdDown implementation="css">

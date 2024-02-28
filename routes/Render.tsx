@@ -14,10 +14,10 @@ interface Props {
 export const Render: React.FC<Props> = ({ children }) => {
   // const router = useRouter();
 
-  // redirect to spaceai.jp
+  // redirect to hidenari-yuda.jp
   // useEffect(() => {
   //   if (
-  //     !window.location.hostname.match("/spaceai.jp/") &&
+  //     !window.location.hostname.match("/hidenari-yuda.jp/") &&
   //     process.env.NEXT_PUBLIC_APP_ENV === "prod"
   //   ) {
   //     router.push(process.env.NEXT_PUBLIC_APP_URL + router.asPath);
