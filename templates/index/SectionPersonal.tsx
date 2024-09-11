@@ -46,7 +46,7 @@ export default function SectionPersonal({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>オープンソースでの経験</h2>
+              <h2 className={classes.title}>個人開発など</h2>
               <div className={classes.sectionSpace} />
             </GridItem>
           </GridContainer>

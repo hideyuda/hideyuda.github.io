@@ -61,9 +61,12 @@ export default function Index({ ...rest }) {
               <h4>
                 大阪府出身。同志社大学在学中。
                 <br />
-                2022年2月から2024年2月現在までアンドイーズ株式会社でエンジニアとしてインターンをしております。
+                2022年2月から2024年9月現在までHRTech系スタートアップでエンジニアとしてインターンをしております。
                 <br />
-                サッカーとプログラミングが好きです。
+                <br />
+                - 技術スタック: Go, Python, TypeScript, React, Next.js, AWS, GCP, Docker etc.
+                <br />
+                - 趣味: プログラミング, サッカー, 音楽, 三国志
               </h4>
               <List className={classes.list}>
                 <Button
@@ -72,7 +75,7 @@ export default function Index({ ...rest }) {
                   simple
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/hidenari-yuda"
+                  href="https://github.com/hideyuda"
                 >
                   <i className="fab fa-github" />
                 </Button>
@@ -124,7 +127,7 @@ export default function Index({ ...rest }) {
                 >
                   <img src="/img/note.svg" alt="note" />
                 </Button> */}
-                <Button
+                {/* <Button
                   justIcon
                   simple
                   target="_blank"
@@ -132,11 +135,15 @@ export default function Index({ ...rest }) {
                   href="https://zenn.dev/hidenari_yuda"
                 >
                   <img src="/img/zenn.svg" alt="zenn" />
-                </Button>
+                </Button> */}
               </List>
               <br />
               <div style={{ display: "flex" }}>
-                <Link href="/#zenn">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://note.com/hideyuda"
+                >
                   <a
                     style={{
                       alignItems: "center",
@@ -158,7 +165,7 @@ export default function Index({ ...rest }) {
                     技術ブログ
                   </a>
                 </Link>
-                <Link href="/#contributions">
+                <Link href="/intern">
                   <a
                     style={{
                       alignItems: "center",
@@ -176,7 +183,7 @@ export default function Index({ ...rest }) {
                       width: "296px",
                     }}
                   >
-                    インターンシップでの開発経験
+                    インターンでの経験
                   </a>
                 </Link>
               </div>
@@ -186,9 +193,9 @@ export default function Index({ ...rest }) {
       </Parallax>
       <div className={classes.container}>
         {/* <SectionProducts id="products" /> */}
-        <SectionZenn id="zenn" />
-        <SectionContributions id="contributions" />
-        <SectionOpensource />
+        {/* <SectionZenn id="zenn" /> */}
+        {/* <SectionContributions id="contributions" /> */}
+        {/* <SectionOpensource /> */}
       </div>
       {/* <Footer content={<FooterLinks />} /> */}
     </div>

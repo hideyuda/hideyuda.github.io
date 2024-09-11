@@ -59,7 +59,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Social Media
 
-GitHub: <https://github.com/hidenari-yudaInc>
+GitHub: <https://github.com/hideyudaInc>
 
 GitHub(Owner): <https://twitter.com/hidenari-yuda>
 

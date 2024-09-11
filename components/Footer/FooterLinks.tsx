@@ -100,7 +100,7 @@ export default function FooterLinks(props: any) {
             justIcon
             simple
             target="_blank"
-            href="https://github.com/hidenari-yudaInc"
+            href="https://github.com/hideyudaInc"
           >
             <i className="fab fa-github" />
           </Button>

@@ -16,21 +16,12 @@ export const Routes: RouteConfig[] = [
     allowType: AllowType.All,
   },
   {
-    path: "/contact",
+    path: "/intern",
     allowType: AllowType.All,
   },
-  {
-    path: "/privacy-policy",
-    allowType: AllowType.All,
-  },
-  {
-    path: "/terms",
-    allowType: AllowType.All,
-  },
-  // GuestOnly
-  {
-    path: "/signin",
-    allowType: AllowType.GuestOnly,
-  },
+  // {
+  //   path: "/contact",
+  //   allowType: AllowType.All,
+  // },
   // AdminOnly
 ];

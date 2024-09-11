@@ -46,7 +46,7 @@ export default function SectionCommitingProducts({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>インターンシップでの経験</h2>
+              <h2 className={classes.title}>インターン</h2>
               <div className={classes.sectionSpace} />
             </GridItem>
           </GridContainer>

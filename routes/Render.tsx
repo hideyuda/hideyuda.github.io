@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 import { LoadingContext, useLoadingContext } from "../contexts/LoadingContext";
 import {
   SnackbarContext,

@@ -28,12 +28,12 @@ export default function ErrorPage({ ...rest }) {
   const classes = useStyles();
   return (
     <div style={{ backgroundColor: "#fff" }}>
-      <Header
+      {/* <Header
         absolute
         color="transparent"
         links={<HeaderLinks dropdownHoverColor="dark" />}
         {...rest}
-      />
+      /> */}
       <div
         className={classes.pageHeader}
         style={{
@@ -64,7 +64,7 @@ export default function ErrorPage({ ...rest }) {
           </GridContainer>
         </div>
       </div>
-      <Footer content={<FooterLinks />} />
+      {/* <Footer content={<FooterLinks />} /> */}
     </div>
   );
 }
