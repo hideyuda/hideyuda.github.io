@@ -26,7 +26,7 @@ export default function ErrorPage({ ...rest }) {
   const classes = useStyles();
   return (
     <div>
-      <Header
+      {/* <Header
         absolute
         color="transparent"
         brand="NextJS Material Kit PRO"
@@ -36,7 +36,7 @@ export default function ErrorPage({ ...rest }) {
           color: "white",
         }}
         {...rest}
-      />
+      /> */}
       <div
         className={classes.pageHeader}
         style={{
@@ -59,7 +59,7 @@ export default function ErrorPage({ ...rest }) {
         </div>
         {/* </div> */}
       </div>
-      <Footer
+      {/* <Footer
         content={
           <div>
             <div className={classes.left}>
@@ -114,7 +114,7 @@ export default function ErrorPage({ ...rest }) {
             </div>
           </div>
         }
-      />
+      /> */}
     </div>
   );
 }

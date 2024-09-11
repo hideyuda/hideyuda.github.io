@@ -59,9 +59,9 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Social Media
 
-GitHub: <https://github.com/hideyudaInc>
+GitHub: <https://github.com/hideyuda>
 
-GitHub(Owner): <https://twitter.com/hidenari-yuda>
+GitHub(Owner): <https://github.com/hideyuda>
 
 Twitter(Owner): <https://twitter.com/hideyuda_jp>
 

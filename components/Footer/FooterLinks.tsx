@@ -86,7 +86,7 @@ export default function FooterLinks(props: any) {
       </div>
       <div className={classes.left}>
         <List className={classes.list}>
-          <Button
+          {/* <Button
             color="youtube"
             justIcon
             simple
@@ -94,13 +94,13 @@ export default function FooterLinks(props: any) {
             href="https://www.youtube.com/@hideyuda"
           >
             <i className="fab fa-youtube" />
-          </Button>
+          </Button> */}
           <Button
             color="github"
             justIcon
             simple
             target="_blank"
-            href="https://github.com/hideyudaInc"
+            href="https://github.com/hideyuda"
           >
             <i className="fab fa-github" />
           </Button>
