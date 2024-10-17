@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { LoadingContext, useLoadingContext } from "../contexts/LoadingContext";
 import {
   SnackbarContext,
   useSnackbarContext,
 } from "../contexts/SnackbarContext";
+import { useRouter } from "next/router";
 // import { Routes, AllowType } from "./Routes";
 
 interface Props {
@@ -10,17 +12,11 @@ interface Props {
 }
 
 export const Render: React.FC<Props> = ({ children }) => {
-  // const router = useRouter();
+  const router = useRouter();
 
-  // redirect to hidenari-yuda.jp
-  // useEffect(() => {
-  //   if (
-  //     !window.location.hostname.match("/hidenari-yuda.jp/") &&
-  //     process.env.NEXT_PUBLIC_APP_ENV === "prod"
-  //   ) {
-  //     router.push(process.env.NEXT_PUBLIC_APP_URL + router.asPath);
-  //   }
-  // }, []);
+  useEffect(() => {
+    router.push("https://spaceai.jp/hideyuda");
+  }, []);
 
   // const matchedRoute = Routes.filter((route) => {
   //   return router.route == route.path;
